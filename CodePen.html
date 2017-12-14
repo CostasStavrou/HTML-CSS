@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My first CodePen</title>
+  <style>
+body {
+  color: rgb(170, 108, 57);
+  background-color: rgb(32, 32, 32);
+}
+
+a.link {
+  color: rgb(97, 151, 14);
+}
+
+div.menuitem {
+  height: 2em;
+  overflow: hidden;
+  text-decoration:none;
+  width: 70%;
+  margin: 0 auto;
+}
+
+div.menuitem:hover {
+  height: 12em;
+  overflow: auto;
+  text-decoration:none;
+}
+
+
+p.note {
+  color: rgb(3, 32, 5);
+  background-color: rgb(84, 84, 128);
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid black;
+  width: 70%;
+  margin: 0 auto 10px;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 70%;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+h2 {
+  display: block;
+  margin: 0;
+  color: rgb(220, 220, 64);
+  background: rgb(64,64,220);
+  text-align: center;
+}
+
+.information {
+  padding: 0.5em;
+  border: 1px solid white;
+}
+  </style>
+</head>
+
+<body>
+<h1>User-oriented computing</h1>
+<p class="note">Of course this is not original research. These ideas exist many years and many of them have been tried and failed on the field.<br>
+Please hover on top of the following items.
+</p>
+
+<div class="menuitem">
+<h2>The past and the present</h2>
+<div id="past" class="information">
+<p>In the history of computing many ideas where presented related to the interface between the user and the computer system.   Many companies tried to invent the next big think in User Interface, to be able to control the next wave of computing and make a lot of money. Most of the UIs where application-centric with the support of the notion of files and directories. The user had to learn applications and adopt into a world of hierarchies. A world that some thought was too difficult to grasp for mere humans. Just to remember some of the attempts against these ideas we can look <ul>
+  <li>the document-centric model of <a class="link" href="https://en.wikipedia.org/wiki/OpenDoc">OpenDoc</a> applications</li>
+  <li>task-oriented user interface with the help of guides in many Microsoft products</li>
+  <li>nowadays the idea that users should not save locally, but only on the cloud.
+</ul></p>
+<p>Especially the idea of the cloud is the most limiting UI for the user. This is enforced in some occasions to the user by eliminating for example the idea of external storage (SDCards slots absent on phones/tablets).
+</div>
+</div>
+
+<div class="menuitem">
+<h2>The Problem</h2>
+<div id="problem" class="information">
+<p>
+Mainly the enforcement part. The point is that these UI don't support the many styles of interfacing, but only one style by making assumptions for the user. A known one is the difficulty we have to organize data in files and folders, an idea that most humans are capable to grasp since they use folders to organize information outside of the virtual world of computing since forever (ie. long before computers existed).</p>
+<p>This way the user is not capable to access, archive and exchange files without the use of the cloud. And the cloud is not always available. This way the user has no control of it's data. The control of data is passed to the companies we trust to use on the Internet.</p>
+</div>
+</div>
+
+<div class="menuitem">
+<h2>A proposal</h2>
+<div id="proposal" class="information">
+<p>These days technology has advanced tyo the point that the computing power we have on a small device like a smartphone can support things that in the past where to demanding to being thought as a solution.</p>
+<p>So a combination of a revision control system like <a class="link" href="https://en.wikipedia.org/wiki/Git">Git</a> with the ideas of HyperText (link one piece of data to another), compression algorithms and ability to mount a compressed file on a file system can be the solution we need. Simple, based on already proven technologies and at the same time simple and transparent to the user. A file with a folder containing all the necessary assets can be compressed and mounted whenever accessed.</p>
+</div>
+</div>
+  
+<div class="menuitem">
+<h2>UI changes</h2>
+<div id="UIchanges" class="information">
+<ul>
+  <li>Replace Save with Save changes (or Commit changes).</li>
+  <li>Replace Save As... with Set access location.</li>
+  <li>Replace Open with Retrieve data from...</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
