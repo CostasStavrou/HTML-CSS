@@ -9,6 +9,21 @@ body {
   margin: 1em;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    background-color: rgb(32, 32, 32);
+  }
+  
+  #container {
+    color: black;
+    background-color: rgb(196, 196, 196);
+    width: 900px;
+    margin: 0 auto;
+	padding: 0 1em;
+	border-radius: 3px;
+  }
+}
+
 h1,h2  {
   margin: 1em 0;
 }
@@ -41,6 +56,11 @@ th {
   background-color: rgb(100,255,50);
 }
 
+td {
+  background-color: rgb(164,164,164);
+  border: 1px solid black;
+}
+
 ul {
   padding: 0 0 0.5em 2em;
 }
@@ -52,4 +72,21 @@ p {
 img {
   width: 30%;
   min-width: 280px;
+  border-radius: 4px;
+}
+
+h2 {
+  display: inline-block;
+  background-color: rgb(224, 224, 128);
+  border-radius: 7px;
+  border: 2px solid black;
+  padding: 0.2em;
+}
+
+h1 {
+  display: inline-block;
+  background-color: rgb(196, 224, 224);
+  border-radius: 7px;
+  border: 2px solid black;
+  padding: 0.3em;
 }
