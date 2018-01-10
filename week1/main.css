@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  color: black;
+  background-color: rgb(196, 196, 196);
+  margin: 1em;
+}
+
+h1,h2  {
+  margin: 1em 0;
+}
+
+table {
+  display: table;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 50%;
+  min-width:290px;
+  margin: 1em 0;
+  border: 2px solid green; 
+}
+
+@media screen and (max-width:500px) {
+  table {
+    width: 90%;
+  }
+}
+
+th, td {
+  text-align: left;
+  padding: 0.25em;
+  border: 1px solid green;
+}
+
+th {
+  width: 30%;
+  color: black;
+  background-color: rgb(100,255,50);
+}
+
+ul {
+  padding: 0 0 0.5em 2em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+img {
+  width: 30%;
+  min-width: 280px;
+}
