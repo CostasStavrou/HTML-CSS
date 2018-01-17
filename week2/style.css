@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 1em 0;
+}
+
+section {
+	width: 100%;
+	clear: both;
+}
+
+section h2 {
+	padding-top: 4%;
+}
+
+.grid-item img {
+	width: 100%;
+}
+
+#grid-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 92%;
+	padding-left: 4%;
+}
+
+@media screen and (max-width: 599px) {
+	#grid-floats {
+		width: 100%;
+	}
+	
+	#grid-floats .grid-item {
+		display: block;
+		padding-top: 1em;
+		padding-left: 4%;
+	}
+	
+	#grid-floats .grid-item:nth-child(1) {
+		width: 92%;
+	}
+	
+	#grid-floats .grid-item:nth-child(n+2) {
+		width: 44%;
+		float: left;
+	}
+		
+	#grid-floats .grid-item:nth-child(n+2):nth-child(even) {
+		clear: left;
+	}
+	
+	#grid-flex .grid-item {
+		display: block;
+		width: 48%;
+		padding-top: 1em;
+	}
+	
+	#grid-flex .grid-item:nth-child(1) {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 949px) {
+	#grid-floats {
+		width: 100%;
+	}
+	
+	#grid-floats .grid-item {
+		display: block;
+		padding-top: 1em;
+		padding-left: 4%;
+		float: left;
+	}
+	
+	#grid-floats .grid-item:nth-child(-n+2) {
+		width: 44%;
+	}
+	
+	#grid-floats .grid-item:nth-child(n+3) {
+		width: 28%;
+	}
+			
+	#grid-floats .grid-item:nth-child(3n) {
+		clear: left;
+	}
+	
+	#grid-flex .grid-item {
+		display: block;
+		width: 30.6%;
+		padding-top: 1em;
+		padding-right: 2%;
+	}
+	
+	#grid-flex .grid-item:nth-child(-n+2) {
+		width: 48%;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	#grid-floats {
+		width: 100%;
+	}
+	
+	#grid-floats .grid-item {
+		display: block;
+		padding-top: 1em;
+		padding-left: 4%;
+		float: left;
+	}
+	
+	#grid-floats .grid-item:nth-child(1) {
+		width: 46%;
+	}
+	
+	#grid-floats .grid-item:nth-child(n+2) {
+		width: 21%;
+	}
+			
+	#grid-floats .grid-item:nth-child(4n) {
+		clear: left;
+	}
+	
+	#grid-flex {
+		justify-content: flex-start;
+	}
+	
+	#grid-flex .grid-item {
+		display: block;
+		width: 24%;
+		padding-top: 1em;
+		padding-right: 1%;
+	}
+	
+	#grid-flex .grid-item:nth-child(1) {
+		width: 48%;
+	}
+
+}
