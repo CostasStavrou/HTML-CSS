@@ -112,11 +112,11 @@ section h2 {
 	}
 	
 	#grid-floats .grid-item:nth-child(1) {
-		width: 46%;
+		width: 44%;
 	}
 	
 	#grid-floats .grid-item:nth-child(n+2) {
-		width: 21%;
+		width: 20%;
 	}
 			
 	#grid-floats .grid-item:nth-child(4n) {
@@ -125,17 +125,18 @@ section h2 {
 	
 	#grid-flex {
 		justify-content: flex-start;
+		width: 96%;
 	}
 	
 	#grid-flex .grid-item {
 		display: block;
-		width: 24%;
+		width: 21%;
 		padding-top: 1em;
-		padding-right: 1%;
+		padding-right: 4%;
 	}
 	
 	#grid-flex .grid-item:nth-child(1) {
-		width: 48%;
+		width: 46%;
 	}
 
 }
