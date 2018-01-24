@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta lang="en-US">
+	<title>CostasStavrou - Reimplementation of home page of thinkwithgoogle.com</title>
+	<link rel="stylesheet" href="./thinkwithgoogle.com.css">
+</head>
+<body>
+	<header>
+		<div id="topRow">
+			<svg id="sandwich" viewBox="0 0 24 24" id="menu" width="100%" height="100%">
+				<path d="M0 0h24v24H0z" fill="none"></path>
+				<path fill-opacity="0.54" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+			</svg>
+			<svg id="thinkwithGoogle" viewBox="0 0 185.97 25.42" id="twg-logo-color" width="100%" height="100%">
+				<g><path fill-opacity="0.54" d="M2.07 15.75V9.57H0v-2h2.07V3.94h2.21v3.61h2.89v2H4.28v6c0 1.32.55 1.92 1.59 1.92a2.23 2.23 0 0 0 1-.19l.77 1.9a4.29 4.29 0 0 1-1.78.31c-2.48 0-3.8-1.37-3.8-3.78"></path>
+				<path fill-opacity="0.54" d="M11.25 7.55l-.1 1.64h.1a4.47 4.47 0 0 1 3.73-2c3 0 4.5 2 4.5 5v7.21h-2.21v-6.94c0-2.45-1.23-3.27-2.91-3.27-1.92 0-3.1 1.83-3.1 3.63v6.52H9V2.12h2.21v5.43z"></path>
+				<path fill-opacity="0.54" d="M21.57 3.49a1.56 1.56 0 1 1 1.56 1.56 1.56 1.56 0 0 1-1.56-1.56"></path>
+				<path fill-opacity="0.54" d="M22.03 19.34h2.21V7.55h-2.21v11.79z"></path>
+				<path fill-opacity="0.54" d="M29 9.19h.1a4.47 4.47 0 0 1 3.73-2c3 0 4.5 2 4.5 5v7.21h-2.22v-6.94c0-2.45-1.23-3.27-2.91-3.27-1.92 0-3.1 1.83-3.1 3.63v6.52h-2.22V7.55H29v1.64z"></path>
+				<path fill-opacity="0.54" d="M41.89 12.65l5-5.1h2.94v.1l-4.6 4.59 4.81 7v.1h-2.67l-3.7-5.56-1.78 1.78v3.78h-2.21V2.12h2.21v10.53z"></path>
+				<path fill-opacity="0.38" d="M67.69 19.34l-2.93-9.05-2.91 9.05h-2.24l-3.8-11.79h2.31l2.62 8.9h.03l2.9-8.9h2.29l2.91 8.9h.02l2.6-8.9h2.26l-3.8 11.79h-2.26z"></path>
+				<path fill-opacity="0.38" d="M74.81 3.49a1.56 1.56 0 1 1 1.56 1.56 1.56 1.56 0 0 1-1.56-1.56"></path>
+				<path fill-opacity="0.38" d="M75.27 19.34h2.21V7.55h-2.21v11.79z"></path>
+				<path fill-opacity="0.38" d="M81.18 15.75V9.57h-2.07v-2h2.07V3.94h2.21v3.61h2.89v2h-2.89v6c0 1.32.55 1.92 1.59 1.92a2.23 2.23 0 0 0 1-.19l.77 1.9a4.29 4.29 0 0 1-1.78.31c-2.48 0-3.8-1.37-3.8-3.78"></path>
+				<path fill-opacity="0.38" d="M90.37 7.55l-.1 1.64h.1a4.47 4.47 0 0 1 3.73-2c3 0 4.5 2 4.5 5v7.21h-2.22v-6.94c0-2.45-1.23-3.27-2.91-3.27-1.92 0-3.1 1.83-3.1 3.63v6.52h-2.22V2.12h2.21v5.43z"></path>
+				<path fill-opacity="0.38" d="M183.39 8.44V7.21h-.46v-.28h1.2v.28h-.43v1.23h-.31z"></path>
+				<path fill-opacity="0.38" d="M185.66 8.44v-.75l.02-.29h-.02l-.42 1.04h-.22l-.42-1.04h-.01l.01.29v.75h-.31V6.93h.43l.4 1.03h.02l.4-1.03h.43v1.51h-.31z"></path>
+				<path fill="#4285f4" d="M104.76 9.86a10 10 0 0 1 10-9.86 9.4 9.4 0 0 1 6.76 2.72l-1.9 1.9a6.87 6.87 0 0 0-4.86-1.92 7.07 7.07 0 0 0-7.07 7.17 7.07 7.07 0 0 0 7.08 7.13 6.6 6.6 0 0 0 5-2 5.62 5.62 0 0 0 1.47-3.39h-6.44V9h9.07a8.79 8.79 0 0 1 .14 1.68 8.9 8.9 0 0 1-2.33 6.3 9 9 0 0 1-6.88 2.77 10 10 0 0 1-10-9.86"></path>
+				<path fill="#eb4335" d="M131.31 17.22a3.67 3.67 0 0 1-3.58-3.85 3.59 3.59 0 1 1 7.17 0 3.67 3.67 0 0 1-3.58 3.85m0-10.2a6.26 6.26 0 0 0-6.37 6.35 6.375 6.375 0 0 0 12.75 0A6.26 6.26 0 0 0 131.31 7"></path>
+				<path fill="#fbbc05" d="M145.21 17.22a3.67 3.67 0 0 1-3.58-3.85 3.59 3.59 0 1 1 7.17 0 3.67 3.67 0 0 1-3.58 3.85m0-10.2a6.26 6.26 0 0 0-6.37 6.35 6.375 6.375 0 0 0 12.75 0A6.26 6.26 0 0 0 145.21 7"></path>
+				<path fill="#4285f4" d="M159.07 17.22a3.64 3.64 0 0 1-3.54-3.82 3.67 3.67 0 0 1 3.54-3.87 3.58 3.58 0 0 1 3.39 3.87 3.55 3.55 0 0 1-3.39 3.82zm3.2-9.81v1h-.1A4.4 4.4 0 0 0 158.83 7a6.35 6.35 0 0 0 0 12.7 4.33 4.33 0 0 0 3.34-1.44h.1v.91c0 2.43-1.3 3.73-3.39 3.73a3.51 3.51 0 0 1-3.2-2.26l-2.43 1a6.05 6.05 0 0 0 5.63 3.75c3.27 0 6-1.92 6-6.61V7.41h-2.65z"></path>
+				<path fill="#34a853" d="M166.84 19.34h2.79V.67h-2.79v18.67z"></path>
+				<path fill="#eb4335" d="M177.06 9.48a2.46 2.46 0 0 1 2.36 1.35l-5.68 2.36a3.48 3.48 0 0 1 3.32-3.7m.22 7.74a3.23 3.23 0 0 1-3.08-1.92l8.49-3.51-.29-.72A5.9 5.9 0 0 0 177 7a6 6 0 0 0-6 6.35 6.21 6.21 0 0 0 6.3 6.35 6.31 6.31 0 0 0 5.29-2.81l-2.16-1.44a3.63 3.63 0 0 1-3.13 1.76"></path></g>
+			</svg>
+			<select size="1">
+				<option value="//apac.thinkwithgoogle.com/intl/zh-TW_ALL/">中文 - 台灣</option>
+				<option value="/intl/de-de/" data-locale="de-de">Deutsch - Deutschland</option>
+				<option value="//apac.thinkwithgoogle.com/" data-locale="en-apac">English - Asia Pacific</option>
+				<option value="/intl/en-aunz/" data-locale="en-au">English - Australia &amp; NZ</option>
+				<option value="/intl/en-ca/" data-locale="en-ca">English - Canada</option>
+				<option value="/intl/en-cee/" data-locale="en-cee">English - Central Eastern Europe</option>
+				<option value="/intl/en-145/" data-locale="en-145">English - MENA</option>
+				<option value="/intl/fr-145/" data-locale="fr-145">Français - MENA</option>
+				<option value="/intl/en-154/" data-locale="en-154">English - Nordics &amp; Benelux</option>
+				<option value="/intl/en-gb/" data-locale="en-gb">English - United Kingdom</option>
+				<option value="/" selected="selected" data-locale="en-us">English - United States</option>
+				<option value="/intl/es-es/" data-locale="es-es">Español - España</option>
+				<option value="/intl/es-419/" data-locale="es-419">Español - Latinoamérica</option>
+				<option value="/intl/fr-fr/" data-locale="fr-fr">Français - France</option>
+				<option value="/intl/it-it/" data-locale="it-it">Italiano - Italia</option>
+				<option value="//apac.thinkwithgoogle.com/intl/ja_ALL/" data-toggle-label="日本">日本語 - 日本</option>
+				<option value="//apac.thinkwithgoogle.com/intl/ko_ALL/">한국어 - 대한민국</option>
+				<option value="/intl/pt-br/" data-locale="pt-br">Português (Brasil) - Brasil</option>
+				<option value="/intl/ru-ru/" data-locale="ru-ru">русский - Россия</option>
+				<option value="//apac.thinkwithgoogle.com/intl/th_ALL/">ภาษาไทย - ประเทศไทย</option>
+				<option value="/intl/tr-tr/" data-locale="tr-tr">Türkçe - Türkiye</option>
+			</select>
+			<ul id="topNavMenu">
+				<li>Consumer Insights</li>
+				<ul id="Marketting_resources">
+					<li>Marketing Resources</li>
+				</ul>
+				<ul id="Advertising_channels">
+					<li>Advertising Channels</li>
+				</ul>
+			</ul>
+			
+			
+			<svg id="searchicon" viewBox="0 0 24 24" id="search" width="100%" height="100%">
+				<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+				<path d="M0 0h24v24H0z" fill="none"></path>
+			</svg>
+		</div>
+		<div id="Header_Insights">
+			<h1>Insights you want. Data you need.</h1>
+			<p>Stay on top of the latest and greatest</p>
+			<p>SUBSCRIBE</p>
+		</div>
+		<div id="Header_Trends">
+			<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-behavior-data-visualization/">
+			<p>Over the past two years, mobile searches for toothpaste surged. Explore how
+			category trends are shifting with our data feature</p>
+			<img>
+			</a>
+		</div>
+	</header>
+	<main>
+		<section id="trends_stories">
+			<h1>Latest trends and stories</h1>
+			<article id="CES" class="large_article">
+			<a href="https://www.thinkwithgoogle.com/marketing-resources/experience-design/ces-latest-technology-trends/">
+			<figure>
+				<div></div>
+				<figcaption>
+				<p>CES Report: As technology advances, assistance is the new battleground
+				for growth</p>
+				<span>Article - Jan 2018</span>
+				</figcaption>
+			</figure></a></article>
+			<article>
+			<a href="https://www.thinkwithgoogle.com/consumer-insights/voice-assistance-consumer-experience/">
+			<figure>
+				<img src="./thinkwithgoogle_images/1178-CES-Voice-Research.jpg">
+				<figcaption>
+				<p>5 ways voice assistance is shaping consumer behavior</p>
+				<span>Article - Jan 2018</span>
+				</figcaption>
+			</figure>
+			</a></article>
+			<article>
+			<a href="https://www.thinkwithgoogle.com/consumer-insights/personal-needs-search-trends/">
+			<figure>
+				<img src="./thinkwithgoogle_images/1143-Personal-Needs-perspective-Thumbnail.jpg">
+				<figcaption>
+				<p>It's all about 'me'—how people are taking search personally</p>
+				<span>Perspective - Jan 2018</span>
+				</figcaption>
+			</figure>
+			</a></article>
+			<article>
+			<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-behavior-data-visualization/">
+			<figure>
+				<img src="./thinkwithgoogle_images/1168-Turner-Sports-Thumbnail.width-800.jpg">
+				<figcaption>
+				<p>No decision is too small for today's consumers</p>
+				<span>Infographic - Dec 2017</span>
+				</figcaption>
+			</figure>
+			</a></article>
+			<article>
+			<a href="https://www.thinkwithgoogle.com/advertising-channels/video/consumer-purchase-behavior/">
+			<figure>
+				<img src="./thinkwithgoogle_images/1164-Try-Before-You-Buy-Thumbnail.width-800.jpg">
+				<figcaption>
+				<p>Today's 'try before you buy' mindset is reshaping how people shop</p>
+				<span>Article - Jan 2018</span>
+				</figcaption>
+			</figure>
+			</a></article>
+			<article id="voice_speakers" class="large_article">
+			<a href="https://www.thinkwithgoogle.com/consumer-insights/voice-assistive-speaker-technology/">
+			<figure>
+				<div></div>
+				<figcaption>
+				<p>OK, marketers: Here's what people are saying about their boice-activated
+				speakers</p>
+				<span>Article - Jan 2018</span>
+				</figcaption>
+			</figure>
+			</a></article>
+		</section>
+		<section id="deeper_dive">
+			<h1>Take a deeper dive</h1>
+			<section id="resources">
+				<h2>Marketing Resources</h2><img src="./thinkwithgoogle_images/icon_resources-01.svg">
+				<ul>
+					<li><a href="https://www.thinkwithgoogle.com/marketing-resources/data-measurement/">
+					Data &amp; Measurement</a></li>
+					<li><a href="https://www.thinkwithgoogle.com/marketing-resources/experience-design/">
+					Experience &amp; Design</a></li>
+					<li><a href="https://www.thinkwithgoogle.com/marketing-resources/omnichannel/">
+					Omnichannel</a></li>
+					<li><a href="https://www.thinkwithgoogle.com/marketing-resources/programmatic/">
+					Programmatic Advertising</a></li>
+				</ul>
+			</section>
+			<section id="channels">
+				<h2>Advertising Channels</h2><img src="./thinkwithgoogle_images/icon_marketingstrategies-01.svg">
+				<ul>
+					<li><a href="https://www.thinkwithgoogle.com/advertising-channels/emerging-technology/">
+					Emerging Technology</a></li>
+					<li><a href="https://www.thinkwithgoogle.com/advertising-channels/search/">Search</a></li>
+					<li><a href="https://www.thinkwithgoogle.com/advertising-channels/video/">Video</a></li>
+				</ul>
+			</section>
+			<section id="insights">
+				<h2>Consumer Insights</h2><img src="./thinkwithgoogle_images/icon_consumerinsights-01.svg">
+				<p>Learn about consumer trends, from how people are using apps to
+				video consumption on mobile.</p>
+				<p><a href="https://www.thinkwithgoogle.com/consumer-insights/">Consumer Insights</a></p>
+			</section>
+		</section>
+		<section id="tools">
+			<h1>Tools for marketers</h1>
+			<section id="tools_details">
+				<section id="shopping_insights">
+					<img src="./thinkwithgoogle_images/shopping-insights-icon.png">
+					<h2>Shopping Insights</h2>
+					<p>Explore trendds and popularity of products across the U.S.</p>
+					<p>OPEN</p>
+						<svg viewBox="0 0 17 17" id="external-link" width="100%" height="100%">
+						<path fill="blue" d="M2.657 2.657A8 8 0 1 0 13.97 13.97 8 8 0 0 0 2.657 2.657zm9.082 9.082h-1.211V6.956l-5.211 5.21-.856-.855 5.21-5.212H4.89V4.89h6.85v6.85z" fill-rule="evenodd"></path>
+						</svg>
+					<p>LEARN MORE</p>
+				</section>
+				<section id="consumer_barometer">
+					<img src="./thinkwithgoogle_images/consumerbarometer.png">
+					<h2>Consumer Barometer</h2>
+					<p>Explore the role of online sources in the journey from
+					consideration to purchase</p>
+					<p>OPEN</p>
+						<svg viewBox="0 0 17 17" id="external-link" width="100%" height="100%">
+						<path fill="blue" d="M2.657 2.657A8 8 0 1 0 13.97 13.97 8 8 0 0 0 2.657 2.657zm9.082 9.082h-1.211V6.956l-5.211 5.21-.856-.855 5.21-5.212H4.89V4.89h6.85v6.85z" fill-rule="evenodd"></path>
+						</svg>
+					<p>LEARN MORE</p>
+				</section>
+				<section id="google_trends">
+					<img src="./thinkwithgoogle_images/2017-05-11-min.png">
+					<h2>Google Trends</h2>
+					<p>Use real-time search data to help you gauge consumer search behaviors.</p>
+					<p>OPEN</p>
+						<svg viewBox="0 0 17 17" id="external-link" width="100%" height="100%">
+						<path fill="blue" d="M2.657 2.657A8 8 0 1 0 13.97 13.97 8 8 0 0 0 2.657 2.657zm9.082 9.082h-1.211V6.956l-5.211 5.21-.856-.855 5.21-5.212H4.89V4.89h6.85v6.85z" fill-rule="evenodd"></path>
+						</svg>
+					<p>LEARN MORE</p>
+				</section>
+				<section id="display_benchmarks">
+					<img src="./thinkwithgoogle_images/display_1.png">
+					<h2>Display Benchmarks</h2>
+					<p>Pull up-to-date industry benchmarks for your display campaigns.</p>
+					<p>OPEN</p>
+						<svg viewBox="0 0 17 17" id="external-link" width="100%" height="100%">
+						<path fill="blue" d="M2.657 2.657A8 8 0 1 0 13.97 13.97 8 8 0 0 0 2.657 2.657zm9.082 9.082h-1.211V6.956l-5.211 5.21-.856-.855 5.21-5.212H4.89V4.89h6.85v6.85z" fill-rule="evenodd"></path>
+						</svg>
+					<p>LEARN MORE</p>
+				</section>
+			</section>
+				
+			<section id="more_tools">
+				<a href="https://www.thinkwithgoogle.com/tools/">SEE ALL TOOLS</a>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<p>Get the latest data, insight, and inspiration from Google.</p>
+		<div id="form">
+			<input name="email" type="text" placeholder="Email Address">
+			<input name="company" type="text" placeholder="Company">
+			<p>Sign up to receive your selected communications from Google Inc. and its
+			affiliates. Your information will be used in accordance with Google's privacy
+			policy. You may opt out at any time.</p>
+			<span>SUBSCRIBE</span>
+		</div>
+		<hr>
+		<a id="Google_logo" href="https://www.google.com/">
+			<svg viewBox="0 0 71 23" id="google-logo" width="100%" height="100%">
+			<g><path fill="white" d="M0 8.773C0 3.937 4.083 0 8.938 0c2.684 0 4.595 1.047 6.034 2.415l-1.695 1.693c-1.032-.962-2.43-1.712-4.34-1.712-3.544 0-6.316 2.847-6.316 6.377s2.773 6.38 6.318 6.38c2.297 0 3.607-.92 4.446-1.755.687-.686 1.137-1.67 1.307-3.02H8.94V7.982h8.097c.085.432.13.947.13 1.502 0 1.796-.495 4.024-2.085 5.607-1.547 1.602-3.524 2.46-6.142 2.46C4.083 17.55 0 13.61 0 8.774zM23.693 15.076c-1.72 0-3.198-1.413-3.198-3.425 0-2.03 1.48-3.422 3.198-3.422s3.2 1.39 3.2 3.423c0 2.013-1.482 3.426-3.2 3.426m0-9.076C20.557 6 18 8.375 18 11.65c0 3.257 2.557 5.652 5.693 5.652 3.137 0 5.692-2.395 5.692-5.65C29.385 8.374 26.83 6 23.693 6M36.696 15.076c-1.72 0-3.2-1.413-3.2-3.425 0-2.03 1.48-3.422 3.2-3.422 1.718 0 3.2 1.39 3.2 3.423 0 2.013-1.482 3.426-3.2 3.426m0-9.076C33.56 6 31 8.375 31 11.65c0 3.257 2.56 5.652 5.696 5.652 3.135 0 5.692-2.395 5.692-5.65C42.388 8.374 39.83 6 36.696 6M48.648 15.076c-1.716 0-3.156-1.43-3.156-3.403 0-1.99 1.44-3.445 3.156-3.445 1.697 0 3.03 1.454 3.03 3.445 0 1.972-1.333 3.403-3.03 3.403zm2.858-8.732v.918h-.085C50.86 6.602 49.79 6 48.435 6 45.6 6 43 8.485 43 11.673c0 3.168 2.6 5.63 5.434 5.63 1.355 0 2.427-.6 2.987-1.287h.086v.816c0 2.162-1.16 3.316-3.028 3.316-1.526 0-2.47-1.092-2.857-2.01l-2.17.9c.624 1.498 2.278 3.336 5.028 3.336 2.922 0 5.39-1.713 5.39-5.885V6.343h-2.362zM56 16.608h2.49V0H56M65.434 8.183c.987 0 1.825.494 2.104 1.2l-5.07 2.095c-.064-2.182 1.698-3.295 2.966-3.295m.192 6.89c-1.267 0-2.17-.577-2.748-1.71l7.582-3.124-.26-.644C69.73 8.333 68.29 6 65.348 6 62.427 6 60 8.292 60 11.65c0 3.167 2.404 5.65 5.626 5.65 2.6 0 4.103-1.583 4.727-2.504l-1.934-1.284c-.644.942-1.526 1.562-2.794 1.562"></path></g>
+			</svg>
+		</a>
+		<ul>
+			<li><a href="https://www.google.com/about/">About Google</a></li>
+			<li><a href="https://www.thinkwithgoogle.com/products/">Products</a></li>
+			<li><a href="https://www.google.com/ads/?sourceid=awo&subid=us-en-et-twg_footer">Advertising</a></li>
+			<li><a href="https://www.google.com/services/?sourceid=awo&subid=us-en-et-twg_footer#?modal_active=none">Business</a></li>
+			<li><a href="https://www.google.com/policies/privacy/">Privacy & Terms</a></li>
+			<li><a href="https://www.thinkwithgoogle.com/about/">About Think with Google</a></li>
+			<li><a href="https://docs.google.com/a/google.com/forms/d/1hcPFMjRy7x6nu-iXtpRVxHoL1rYeiziy3OjmgeqSiY0/viewform">Feedback</a></li>
+		</ul>
+		
+		<select size="1">
+			<option value="//apac.thinkwithgoogle.com/intl/zh-TW_ALL/">中文 - 台灣</option>
+			<option value="/intl/de-de/" data-locale="de-de">Deutsch - Deutschland</option>
+			<option value="//apac.thinkwithgoogle.com/" data-locale="en-apac">English - Asia Pacific</option>
+			<option value="/intl/en-aunz/" data-locale="en-au">English - Australia &amp; NZ</option>
+			<option value="/intl/en-ca/" data-locale="en-ca">English - Canada</option>
+			<option value="/intl/en-cee/" data-locale="en-cee">English - Central Eastern Europe</option>
+			<option value="/intl/en-145/" data-locale="en-145">English - MENA</option>
+			<option value="/intl/fr-145/" data-locale="fr-145">Français - MENA</option>
+			<option value="/intl/en-154/" data-locale="en-154">English - Nordics &amp; Benelux</option>
+			<option value="/intl/en-gb/" data-locale="en-gb">English - United Kingdom</option>
+			<option value="/" selected="selected" data-locale="en-us">English - United States</option>
+			<option value="/intl/es-es/" data-locale="es-es">Español - España</option>
+			<option value="/intl/es-419/" data-locale="es-419">Español - Latinoamérica</option>
+			<option value="/intl/fr-fr/" data-locale="fr-fr">Français - France</option>
+			<option value="/intl/it-it/" data-locale="it-it">Italiano - Italia</option>
+			<option value="//apac.thinkwithgoogle.com/intl/ja_ALL/" data-toggle-label="日本">日本語 - 日本</option>
+			<option value="//apac.thinkwithgoogle.com/intl/ko_ALL/">한국어 - 대한민국</option>
+			<option value="/intl/pt-br/" data-locale="pt-br">Português (Brasil) - Brasil</option>
+			<option value="/intl/ru-ru/" data-locale="ru-ru">русский - Россия</option>
+			<option value="//apac.thinkwithgoogle.com/intl/th_ALL/">ภาษาไทย - ประเทศไทย</option>
+			<option value="/intl/tr-tr/" data-locale="tr-tr">Türkçe - Türkiye</option>
+		</select>
+
+		<ul id="social_icons">		
+			<li>
+				<a href="https://www.linkedin.com/company/think-with-google">
+				<svg viewBox="0 0 25 18" id="share-linkedin" width="100%" height="100%">
+				<path fill="white" d="M11.2 8.7c.4-.7.9-1.1 1.6-1.4 1.2-.5 2.4-.4 3.6.1.9.4 1.4 1.2 1.6 2.2.1.6.2 1.3.2 1.9v6.2c0 .2-.1.2-.2.2h-2.9c-.2 0-.2-.1-.2-.2v-5.6c0-.4-.1-.8-.2-1.2-.2-.5-.6-.9-1.1-.9-.3 0-.6 0-.9.1-.7.2-1.1.7-1.2 1.4-.1.4-.1.8-.1 1.1v5.1c0 .2 0 .3-.3.3H8.2c-.2 0-.2-.1-.2-.2V7.6c0-.2.1-.2.2-.2H11c.2 0 .2.1.2.2v1.1"></path>
+				<path fill="white" d="M2.3 7.3h3.1c.2 0 .2 0 .2.2v10.3c0 .1 0 .2-.2.2h-3-.2l.1-10.7z"></path>
+				<path fill="white" d="M3.9 2c1.1 0 2 .9 2 1.9 0 1.1-.9 2-2 2-1 0-1.9-.9-1.9-2C2 2.9 2.9 2 3.9 2"></path>
+				</svg>
+				</a>
+			</li>
+			<li>
+				<a href="htfill="white" href="https://twitter.com/ThinkwithGoogle">
+				<svg viewBox="0 0 25 18" id="share-twitter" width="100%" height="100%">
+				<path fill="white" d="M21.2 6.1c-.6.3-1.3.4-2 .5.7-.4 1.3-1.1 1.6-1.9-.7.4-1.4.7-2.2.8-.7-.6-1.6-1.1-2.6-1.1-1.9 0-3.5 1.5-3.6 3.5 0 .3 0 .5.1.8C9.6 8.5 7 7 5.3 4.9c-.3.5-.5 1.1-.5 1.8 0 1.2.6 2.3 1.5 2.9-.6 0-1.1-.2-1.6-.5 0 1.7 1.2 3.1 2.8 3.5-.3.1-.6.1-.9.1-.2 0-.4 0-.7-.1.4 1.4 1.7 2.4 3.2 2.5-1.2.9-2.7 1.5-4.4 1.4-.3 0-.6 0-.8-.1 1.5 1 3.4 1.6 5.4 1.6 6.5.1 10-5.2 10.1-9.8v-.5c.7-.3 1.3-.9 1.8-1.6"></path>
+				</svg>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/ThinkwithGoogle/">
+				<svg viewBox="0 0 25 18" id="share-facebook" width="100%" height="100%">
+				<path fill="white" d="M14.2 18v-7h2.3l.4-2.7h-2.7V6.5c0-.8.2-1.3 1.4-1.3H17V2.8c-.2 0-1.1-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6v2H9V11h2.4v7h2.8z"></path>
+				</svg>
+				</a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/+ThinkwithGoogle/posts?prsrc=3">
+				<svg viewBox="0 0 25 18" id="share-googleplus" width="100%" height="100%">
+				<path fill="white" d="M16.8 9.7h-7v2.5h4.1c-.2 1.1-1.3 3-4.1 3-2.5 0-4.5-2.1-4.5-4.6S7.3 6 9.8 6c1.4 0 2.4.6 2.9 1.1l2-2C13.5 4 11.9 3.3 9.9 3.3c-4.1 0-7.4 3.3-7.4 7.3 0 4.1 3.3 7.4 7.4 7.4 4.3 0 7.1-3 7.1-7.2-.1-.4-.1-.8-.2-1.1"></path>
+				<path fill="white" d="M25 9.1h-1.8V7.3h-1.9v1.8h-1.8v1.8h1.8v1.9h1.9v-1.9H25z"></path>
+				</svg>
+				</a>
+			</li>
+			<li>	
+				<a href="https://feeds.feedburner.com/google/think">
+				<svg viewBox="0 0 25 18" id="rss-feed" width="100%" height="100%">
+				<ellipse fill="white" transform="matrix(.00622 -1 1 .00622 -7.09 24.67)" cx="8.9" cy="15.9" rx="2.1" ry="2.1"></ellipse>
+				<path fill="white" d="M6.8 3v2.7C13.5 5.7 19 11.3 19 18h2.7c.1-8.2-6.6-15-14.9-15zm0 5.5v2.7c3.7 0 6.8 3.1 6.7 6.8h2.7c.1-5.3-4.1-9.5-9.4-9.5z"></path>
+				</svg>
+				</a>
+			</li>
+		</ul>	
+		
+	</footer>
+</body>
+</html>
