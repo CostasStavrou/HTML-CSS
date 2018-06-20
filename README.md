@@ -29,7 +29,7 @@ My contributions follow:
 
 **Answer**
 
-[A simple web resume](week1/index.html)
+[A simple web resume](https://costasstavrou.github.io/HTML-CSS/week1/index.html)
 
 ## Week 2 assignment
 
@@ -39,7 +39,7 @@ tablet, and desktop). Check instructions and the wireframe on the [SHA website](
 
 **Answer**
 
-[Responsive layouts](week2/index.html)
+[Responsive layouts](https://costasstavrou.github.io/HTML-CSS/week2/index.html)
 
 ## Week 3 assignment
 
@@ -57,7 +57,7 @@ The final part of this homework is to practice HTML and CSS by making a website.
 
 **Answer**
 
-I implemented the [thinkwithgoogle](week3/thinkwithgoogle.com.html) front page
+I implemented the [thinkwithgoogle](https://costasstavrou.github.io/HTML-CSS/week3/thinkwithgoogle.com.html) front page
 as it looked at that point in time.
 
 
